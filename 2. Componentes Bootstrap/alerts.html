@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Demo de Componentes Bootstrap | Programación Avanzada JavaScript</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="../favicon.ico">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="https://academik.io">
+                <img src="/img/logo.png" width="120" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formularios</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../1. Formularios/formularios.html">Validación Formularios HTML</a>
+                            <a class="dropdown-item" href="../1. Formularios/formulariosjs.html">Validación Formularios JS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Componentes Bootstrap</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/alerts.html">Alerts</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/badges.html">Badges</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/breadcrumb.html">Breadcrumb</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/buttons.html">Buttons</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/cards.html">Cards</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/carousel.html">Carousel</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/collapsesDropdowns.html">Collapses y dropdowns</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/modal.html">Modal</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/sweetAlert.html">Sweet Alert</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../3. jQuery/jquery.html">jQuery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <blockquote class="blockquote" style="padding: 4%; background-color: #FBBB52;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-2">Demo Alerts</h1>
+                        <p>Esta demo corresponde a la sesión de componentes Bootstrap del curso de programación avanzada en JavaScript de Academik</p>
+                    </div>
+                </div>
+            </div>
+        </blockquote>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4">Alertas</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="alert alert-primary" role="alert">
+                            Alerta primary con link hacia <a href="https://academik.io" class="alert-link">Academik.io</a>
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                            <h4 class="alert-heading">Alerta secondary</h4>
+                            <p>Esta alerta posee un contenido en el cuerpo.</p>
+                        </div>
+                        <div class="alert alert-success" role="alert alert-dismissible fade show">
+                            <strong>Alerta success</strong> que puede cerrarse
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-danger" role="alert" id="danger-alert" name="danger-alert">
+                            <strong>Alerta danger</strong> con eventos que detectan cuando se cierra
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <button class="btn btn-outline-primary" onclick="cerrarAlertaDanger()">Cerrar alerta danger</button>
+                        <br/><br/>
+                        <div class="alert alert-warning" role="alert">
+                            Alerta warning
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            Alerta info
+                        </div>
+                        <div class="alert alert-light" role="alert">
+                            Alerta light
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                            Alerta dark
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="./alerts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Demo de Componentes Bootstrap | Programación Avanzada JavaScript</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="icon" type="image/png" href="../favicon.ico">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="https://academik.io">
+                <img src="/img/logo.png" width="120" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formularios</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../1. Formularios/formularios.html">Validación Formularios HTML</a>
+                            <a class="dropdown-item" href="../1. Formularios/formulariosjs.html">Validación Formularios JS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Componentes Bootstrap</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/alerts.html">Alerts</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/badges.html">Badges</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/breadcrumb.html">Breadcrumb</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/buttons.html">Buttons</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/cards.html">Cards</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/carousel.html">Carousel</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/collapsesDropdowns.html">Collapses y dropdowns</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/modal.html">Modal</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/sweetAlert.html">Sweet Alert</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../3. jQuery/jquery.html">jQuery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <blockquote class="blockquote" style="padding: 4%; background-color: #FBBB52;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-2">Demo Sweet Alert</h1>
+                        <p>Esta demo corresponde a la sesión de componentes Bootstrap del curso de programación avanzada en JavaScript de Academik</p>
+                    </div>
+                </div>
+            </div>
+        </blockquote>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4">Sweet Alert</h1>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary" onclick="swal('Un mensaje simple')">Alerta Simple</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-info" onclick="swal('Título','Cuerpo','question')">Alerta tipo question</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning" onclick="swal('Título','Cuerpo','warning')">Alerta tipo warning</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-danger" onclick="swal('Título','Cuerpo','error')">Alerta tipo error</button>
+                    </div>
+                    <br/><br/>
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="swal('Título','Cuerpo','success')">Alerta tipo success</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-secondary" onclick="footerAlert()">Alerta con pie</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-dark" onclick="largeAlert()">Alerta larga</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-light" onclick="complexAlert()">Alerta compleja</button>
+                    </div>
+                    <br/><br/>
+                    <div class="col-3">
+                        <button class="btn btn-primary" onclick="position('top-end')">Arriba Derecha</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-info" onclick="position('top-start')">Arriba izquierda</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning" onclick="position('bottom-end')">Abajo Derecha</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-danger" onclick="position('bottom-start')">Abajo Izquierda</button>
+                    </div>
+                    <br/><br/>
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="position('center')">Centro</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-secondary" onclick="position('center-start')">Centro Izquierda</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-dark" onclick="position('center-end')">Centro Derecha</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-light" onclick="animated()">Alerta animada</button>
+                    </div>
+                    <br/><br/>
+                    <div class="col-3">
+                        <button class="btn btn-primary" onclick="confirmation()">Alerta con confirmación</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-info" onclick="image()">Alerta con imagen</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-warning" onclick="customAlert()">Alerta personalizada</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-danger" onclick="ajaxRequest()">Alerta con Ajax</button>
+                    </div>
+                    <br/><br/>
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="queue()">Alerta tipo cola</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-secondary" onclick="toast('error', 'top-end')">Toast error arriba der.</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-dark" onclick="toast('success', 'bottom-end')">Toast success abajo der.</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-light" onclick="toast('info', 'bottom-start')">Toast info abajo izq.</button>
+                    </div>
+                    <br/><br/>
+                    <div class="col-3">
+                        <button class="btn btn-primary" onclick="toast('warning', 'top-start')">Alerta warning arriba izq.</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-info" onclick="toast('question')">Alerta question center</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="./sweetAlert.js"></script>
+    </body>
+</html>

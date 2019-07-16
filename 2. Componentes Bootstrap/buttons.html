@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Demo de Componentes Bootstrap | Programación Avanzada JavaScript</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="../favicon.ico">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="https://academik.io">
+                <img src="/img/logo.png" width="120" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formularios</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../1. Formularios/formularios.html">Validación Formularios HTML</a>
+                            <a class="dropdown-item" href="../1. Formularios/formulariosjs.html">Validación Formularios JS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Componentes Bootstrap</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/alerts.html">Alerts</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/badges.html">Badges</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/breadcrumb.html">Breadcrumb</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/buttons.html">Buttons</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/cards.html">Cards</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/carousel.html">Carousel</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/collapsesDropdowns.html">Collapses y dropdowns</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/modal.html">Modal</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="../2. Componentes Bootstrap/sweetAlert.html">Sweet Alert</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../3. jQuery/jquery.html">jQuery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <blockquote class="blockquote" style="padding: 4%; background-color: #FBBB52;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-2">Demo Buttons</h1>
+                        <p>Esta demo corresponde a la sesión de componentes Bootstrap del curso de programación avanzada en JavaScript de Academik</p>
+                    </div>
+                </div>
+            </div>
+        </blockquote>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4">Botones</h1>
+                    </div>
+                    <div class="col-12">
+                        <h2>Botones rellenos</h2>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Botones solo de contorno</h2>
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-success">Success</button>
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn btn-outline-info">Info</button>
+                        <button type="button" class="btn btn-outline-light">Light</button>
+                        <button type="button" class="btn btn-outline-dark">Dark</button>
+                        <button type="button" class="btn btn-outline-link">Link</button>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Elementos <code>&lt;a&gt;</code> e <code>&lt;input&gt;</code> con estilos de <code>&lt;button&gt;</code></h2>
+                        <a class="btn btn-primary" href="https://academik.io" role="button">Link</a>
+                        <input class="btn btn-primary" type="button" value="Input Button">
+                        <input class="btn btn-primary" type="submit" value="Input Submit">
+                        <input class="btn btn-primary" type="reset" value="Input Reset">
+                        <div class="btn btn-primary">Mi Div</div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Botones <big>grandes</big> y <small>pequeños</small> </h2>
+                        <button type="button" class="btn btn-primary btn-lg">btn-lg</button>
+                        <button type="button" class="btn btn-primary btn-sm">btn-sm</button>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Botones de bloque</h2>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Botones deshabilitados</h2>
+                        <button type="button" class="btn btn-primary btn-lg" disabled>Button primary deshabilitado</button>
+                        <button type="button" class="btn btn-secondary btn-lg" disabled>Button secondary deshabilitado</button>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Checkbox</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="btn-group-toggle" data-toggle="buttons" onclick="checkBox()">
+                                    <label class="btn btn-warning active" id="label-check">
+                                        <input type="checkbox" id="check-button"> Checkbox con estilo de botón
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <input type="checkbox" id="check-box" onclick="checkButton()" /> Checkbox normal
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Radiobutton</h2>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+                            </label>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Grupos de Botones</h2>
+                        <div class="btn-group" role="group" aria-label="Grupo de botones simple">
+                            <button type="button" class="btn btn-primary">Izquierda</button>
+                            <button type="button" class="btn btn-primary">Centro izquierda</button>
+                            <button type="button" class="btn btn-secondary">Centro derecha</button>
+                            <button type="button" class="btn btn-secondary">Derecha/button>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Toolbar de Botones</h2>
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar con grupos de botones">
+                            <div class="btn-group mr-2" role="group" aria-label="Primer grupo">
+                                <button type="button" class="btn btn-success">1</button>
+                                <button type="button" class="btn btn-success">2</button>
+                                <button type="button" class="btn btn-success">3</button>
+                                <button type="button" class="btn btn-success">4</button>
+                            </div>
+                            <div class="btn-group mr-2" role="group" aria-label="Segundo grupo">
+                                <button type="button" class="btn btn-success">5</button>
+                                <button type="button" class="btn btn-success">6</button>
+                                <button type="button" class="btn btn-success">7</button>
+                            </div>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Grupos de Botones de diferentes tamaños</h2>
+                        <div class="btn-group btn-group-lg" role="group">
+                            <button type="button" class="btn btn-primary">Grande</button>
+                            <button type="button" class="btn btn-primary">Grande</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-warning">Normal</button>
+                            <button type="button" class="btn btn-warning">Normal</button>
+                        </div>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-danger">Pequeño</button>
+                            <button type="button" class="btn btn-danger">Pequeño</button>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Grupos de Botones con otros elementos</h2>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-dark">1</button>
+                            <button type="button" class="btn btn-dark">2</button>
+                            <div class="btn-group" role="group">
+                                <button id="bGD" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="bGD">
+                                    <a class="dropdown-item" href="https://academik.io">Dropdown link</a>
+                                    <a class="dropdown-item" href="https://academik.io">Dropdown link</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-dark">3</button>
+                            <button type="button" class="btn btn-dark">4</button>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Grupos de Botones verticales</h2>
+                        <div class="btn-group-vertical" role="group">
+                            <button type="button" class="btn btn-ligth">1</button>
+                            <button type="button" class="btn btn-ligth">2</button>
+                            
+                            <div class="btn-group" role="group">
+                                <button id="bGD" type="button" class="btn btn-ligth dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="bGD">
+                                    <a class="dropdown-item" href="https://academik.io">Dropdown link</a>
+                                    <a class="dropdown-item" href="https://academik.io">Dropdown link</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-ligth">3</button>
+                            <button type="button" class="btn btn-ligth">4</button>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <div class="col-12">
+                        <h2>Botones con iconos</h2>
+                        <div class="row">
+                            <button class="btn btn-primary"><i class="fab fa-facebook"></i></button>&nbsp;
+                            <button class="btn btn-secondary"><i class="fas fa-cat"></i></button>&nbsp;
+                            <button class="btn btn-warning"><i class="fab fa-js"></i></button>&nbsp;
+                            <button class="btn btn-danger"><i class="fab fa-angular"></i></button>&nbsp;
+                            <button class="btn btn-info"><i class="fab fa-accessible-icon"></i></button>&nbsp;
+                            <button class="btn btn-dark"><i class="fab fa-github"></i></button>&nbsp;
+                            <button class="btn btn-light"><i class="far fa-grin-squint-tears"></i></button>&nbsp;
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <button class="btn btn-light btn-lg"><i class="fas fa-bus"></i></button>&nbsp;
+                            <button class="btn btn-dark btn-lg"><i class="fas fa-globe-americas"></i></button>&nbsp;
+                            <button class="btn btn-info btn-lg"><i class="fas fa-plane"></i></button>&nbsp;
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <button class="btn btn-success btn-lg"><i class="fas fa-plus"></i>&nbsp;Agregar</button>&nbsp;
+                            <button class="btn btn-primary btn-lg"><i class="fas fa-edit"></i>&nbsp;Editar</button>&nbsp;
+                            <button class="btn btn-danger btn-lg"><i class="fas fa-trash"></i>&nbsp;Eliminar</button>&nbsp;
+                        </div>
+                        <br/><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <script src="./buttons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

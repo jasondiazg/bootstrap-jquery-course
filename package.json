@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-jquery-course",
+  "version": "1.0.0",
+  "description": "This is a simple repository to learn javascript, jquery and bootstrap, used on academik program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasondiazg/bootstrap-jquery-course.git"
+  },
+  "keywords": [
+    "javascript",
+    "jquery",
+    "bootstrap",
+    "academik"
+  ],
+  "author": "Jason Diaz G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasondiazg/bootstrap-jquery-course/issues"
+  },
+  "homepage": "https://github.com/jasondiazg/bootstrap-jquery-course#readme"
+}
